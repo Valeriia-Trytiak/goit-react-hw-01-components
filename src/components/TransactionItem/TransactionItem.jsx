@@ -3,9 +3,9 @@ import css from "./TransactionItem.module.css";
 
 export const TransactionItem = ({ typeItem, idItem, amountItem, currencyItem }) => {
     return <tr key={idItem}>
-    <td>{typeItem}</td>
-    <td>{amountItem}</td>
-    <td>{currencyItem}</td>
+    <td className={css.tableRow}>{typeItem}</td>
+    <td className={css.tableRow}>{amountItem}</td>
+    <td className={css.tableRow}>{currencyItem}</td>
   </tr>
 }
 

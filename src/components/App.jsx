@@ -1,6 +1,9 @@
-import { Profile } from "./Profile/Profile";
 import user from "user.json";
-console.log(user)
+import data from "data.json";
+
+import { Profile } from "./Profile/Profile";
+import { Statistics } from "./Statistics/Statistics";
+
 
 export const App = () => {
   return (
@@ -8,6 +11,7 @@ export const App = () => {
       style={{
         height: '100vh',
         display: 'flex',
+        gap: 15,
         justifyContent: 'center',
         alignItems: 'center',
         fontSize: 40,
@@ -21,6 +25,10 @@ export const App = () => {
   avatar={user.avatar}
   stats={user.stats}
 />
+
+<Statistics title="Upload stats" stats={data} />
+{/* <Statistics stats={data} /> */}
     </div>
   );
 };
+

@@ -1,2 +1,8 @@
-.classList {
+.friendList {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  list-style-type: none;
+  margin: 0;
+  padding: 30px;
 }
